@@ -13,7 +13,43 @@ Aide : votre fonction s'exécute avec le pattern suivant : calculer(nb1, "+", nb
 */
 
 // Déclaration de la fonction calculer
-
-
+/*function calculer1(nb1, signe, nb2) {
+    switch(signe){
+        case "+" :
+          console.log(nb1 + nb2);
+            break
+        case "-" :
+          console.log(nb1 - nb2);
+            break
+        case "*" :
+           console.log(nb1 * nb2);
+            break
+        case "/" :
+           console.log(nb1 / nb2);
+            break
+    }
+}
+*/
+function calculer1(nb1, signe, nb2) {
+    let total;
+    switch(signe){
+        case "+" :
+          total = nb1 + nb2;
+            break
+        case "-" :
+            total = nb1 - nb2;
+            break
+        case "*" :
+            total = nb1 * nb2;
+            break
+        case "/" :
+            total = nb1 / nb2;
+            break
+    }
+    return total;
+}
 // Utilisation de la fonction calculer
-
+console.log(calculer1(4, "+", 6));
+console.log(calculer1(4, "-", 6));
+console.log(calculer1(2, "*", 0));
+console.log(calculer1(12, "/", 0));

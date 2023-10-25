@@ -28,6 +28,7 @@
       - "Comment vas-tu ?"
       - "Hey, salut !"
       - "Buenos dias !"
+
 2. Appelez cette fonction en lui passant comme paramètre
    a) "Baptiste"
    b) "Sophie"
@@ -37,8 +38,13 @@
 
 function direBonjour(prenom) {
     // Utilisez le paramètre prenom pour les affichages
+    console.log(`Bonjour ${prenom} !`);
     // par exemple : console.log("Bonjour " + prenom + " !");
     // Continuez avec les autres messages
+    console.log(`Hello ${prenom} !`);
+    console.log(`Comment vas-tu ${prenom} ?`);
+    console.log(`Hey, salut ${prenom} !`);
+    console.log(`Buenos dias ${prenom} !`);
 }
 
 /*
@@ -48,10 +54,10 @@ puis on l'utilise dans le corps de la fonction
 */
 
 // 2°) Appel de la fonction avec paramètre
-
 // Appelez la fonction direBonjour en lui passant "Baptiste" comme argument
 // puis appelez-la à nouveau en lui passant "Sophie" comme argument
-
+direBonjour("Baptiste");
+direBonjour("Sophie");
 /* 
 Au moment de l'APPEL de la fonction, on donne une VALEUR au paramètre
 */
